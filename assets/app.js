@@ -87,7 +87,7 @@ database.ref().on("child_added", function (childSnapshot) {
 
     // Next Train
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format("HH:mm");
-    console.log("ARRIVAL TIME: " + moment(nextTrain).format("HH:mm"));
+    console.log("ARRIVAL TIME: " + nextTrain);
 
 
     // Create the new row
